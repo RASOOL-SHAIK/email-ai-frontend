@@ -43,7 +43,7 @@ function App() {
     setGeneratedReply('');
 
     try {
-      const response = await axios.post('http://localhost:8090/api/email/generate', {
+      const response = await axios.post('https://email-ai-backend-09y2.onrender.com/api/email/generate', {
         emailContent,
         tone: tone || undefined,
       });
